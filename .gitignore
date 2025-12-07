@@ -17,6 +17,10 @@ pids
 .env
 .env.*
 
+# Explicit backend/frontend envs (ensure ignored even when nested)
+/backend/.env
+/frontend/.env
+
 # Build output
 dist/
 build/
@@ -31,6 +35,9 @@ frontend/.vite/
 # Backend artifacts
 backend/node_modules/
 backend/dist/
+
+# Ignore node_modules anywhere
+**/node_modules/
 
 # Coverage
 coverage/
